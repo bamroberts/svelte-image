@@ -71,8 +71,9 @@
       <div style="width:100%;padding-bottom:{ratio};" />
       <img
         class="placeholder {placeholderClass}"
+        class:blur
         {src}
-        {alt}
+        {alt}   
       >
       <picture>
         <source type="image/webp" srcset={srcsetWebp}>
@@ -80,7 +81,6 @@
         <img
           use:load
           class="main {c} {className}"
-          class:blur
           {alt}
           {srcset}
           {width}
